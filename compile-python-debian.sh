@@ -36,7 +36,7 @@ mkdir -p $PY_PREFIX
 
 LD_FLAGS="-L$PY_PREFIX/extlib/lib -Wl,--rpath=$PY_PREFIX/lib -Wl,--rpath=$PY_PREFIX/extlib/lib"
 
-# enable optimization with --enable-optimization in configure
+# enable optimization with --enable-optimizations in configure
 cd /tmp && \ 
   tar -xvf $TAR_SRC && \
   cd $EXTRACTED_SRC && \
