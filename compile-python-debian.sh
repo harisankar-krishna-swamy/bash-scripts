@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Compile Python from source on Debian systems
+# Compile Python from source on Debian systems like Ubuntu, PopOS
 # 1. Copy src tar to /tmp
 # 2. Edit TAR_SRC, VERSION, PYTHONS_LOCATION to reflect preferences
 #
@@ -36,7 +36,7 @@ mkdir -p $PY_PREFIX
 
 LD_FLAGS="-L$PY_PREFIX/extlib/lib -Wl,--rpath=$PY_PREFIX/lib -Wl,--rpath=$PY_PREFIX/extlib/lib"
 
-# enable optimization with 
+# enable optimization with --enable-optimization in configure
 cd /tmp && \ 
   tar -xvf $TAR_SRC && \
   cd $EXTRACTED_SRC && \
