@@ -13,7 +13,7 @@ PYTHONS_LOCATION="/tmp/pythons"
 # dependencies (need to refine this)
 sudo zypper -n in libopenssl-1_1-devel ncurses-devel xz-devel libbz2-devel \
          libffi-devel glibc-devel libdb-4_8-devel lzma-sdk-devel \
-         readline6-devel sqlite3-devel libexpat-devel lzlib-devel \
+         readline-devel sqlite3-devel libexpat-devel lzlib-devel \
          zlib-devel libopenssl-devel gcc make 
 
 TEST_VENV="/tmp/pyvenv-$VERSION"
